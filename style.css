@@ -1,0 +1,99 @@
+body {
+  background-color: rgb(106, 208, 248);
+  overflow: hidden;
+  margin: 0;
+}
+
+body {
+  background-color: rgb(106, 208, 248);
+  overflow: hidden;
+  margin: 0;
+}
+
+#title {
+  font-family: "Press Start 2P", cursive;
+  color: yellow;
+  font-size: x-large;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 2px 2px 0 black;
+  position: absolute; 
+  top: 10%; 
+  left: 50%;
+  transform: translateX(-50%); 
+  z-index: 2; 
+}
+
+.cloud {
+  position: absolute;
+  top: 5px;
+  left: -17rem; 
+  width: 15vw;
+  height: 10vh;
+  background-image: url('cloud.png');
+  background-size: cover;
+  animation: float 80s linear infinite;
+  opacity: 0.9;
+  z-index: 1; 
+  pointer-events: none;
+}
+
+
+@keyframes float {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(120vw);
+  }
+}
+
+.cloud:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.cloud:nth-child(2) {
+  top: 30px; 
+  animation-duration: 90s; 
+  animation-delay: 20s;
+}
+
+.cloud:nth-child(3) {
+  top: 50px; 
+  animation-duration: 100s; 
+  animation-delay: 35s;
+}
+
+.floating-number {
+  position: absolute;
+  font-family: "Press Start 2P", cursive;
+  font-size: 2vw;
+  color: white;
+  z-index: 2;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 2px 2px 0 black;
+}
+
+.guess-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 3;
+}
+
+.guess-box input {
+  font-size: 1.5rem;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.guess-box button {
+  font-size: 1.5rem;
+  padding: 10px;
+  cursor: pointer;
+}
+
+
+
