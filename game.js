@@ -1,9 +1,9 @@
 let totalSum = 0;
 let gameStarted = false;
 let minNumber = 1; // Default min num
-let maxNumber = 100; // Default max num
+let maxNumber = 20; // Default max num
 let numberOfNumbers = 10; // Default quantity of numbers spawned
-let overallDuration = 15; // Default spawn interval in ms
+let overallDuration = 20; // Default spawn interval in ms
 
 $(document).ready(function () {
     showStartButton();
@@ -14,9 +14,9 @@ $(document).ready(function () {
 
     $('#applySettings').click(function () {
         minNumber = parseInt($('#minNumber').val()) || 1;
-        maxNumber = parseInt($('#maxNumber').val()) || 100;
+        maxNumber = parseInt($('#maxNumber').val()) || 20;
         numberOfNumbers = parseInt($('#numberOfNumbers').val()) || 10;
-        overallDuration = parseInt($('#overallDuration').val()) || 15;
+        overallDuration = parseInt($('#overallDuration').val()) || 20;
         $('#settings').addClass('hidden');
     });
 });
