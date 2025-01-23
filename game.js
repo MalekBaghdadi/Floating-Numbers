@@ -86,7 +86,7 @@ function checkGuess(userGuess) {
     const guessBox = $('.guess-box');
     if (userGuess === totalSum) {
         guessBox.html(`
-            <p>Correct! The sum was ${totalSum}</p>
+            <p id="answer">Correct! The sum was ${totalSum}</p>
             <button id="restartGame">Restart Game</button>
         `);
     } else {
@@ -114,8 +114,8 @@ function resetGame() {
 
 $(".cloud").each(function (index) {  //cloud animation
   const randomTop = Math.random() * 80;
-  const randomDuration = Math.random() * 20 + 20;
-  let randomDelay = Math.random() * 15 + 15;
+  const randomDuration = Math.random() * 20 + 50;
+  let randomDelay = Math.random() * 10 + 15;
   if (index === 0) {
     randomDelay = 0;
   }
