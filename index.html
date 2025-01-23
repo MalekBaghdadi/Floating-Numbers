@@ -14,13 +14,23 @@
 
 <body>
   <div id="title">
-    Press Any Key to start
-  </div>
+    Press the button to start
+  </div>  
   <div class="cloud"><img src="images/cloud5.png"></div>
   <div class="cloud"><img src="images/cloud5.png"></div>
   <div class="cloud"><img src="images/cloud5.png"></div>
   <div class="floating-number"></div>
   <div class="guess-box"></div>
+  <div id="settings-container">
+    <button id="toggle-settings">Settings</button>
+    <div id="settings" class="hidden">
+      <label>Min Number: <input type="number" id="minNumber" value="1"></label>
+      <label>Max Number: <input type="number" id="maxNumber" value="100"></label>
+      <label>Quantity: <input type="number" id="numberOfNumbers" value="10"></label>
+      <label>Run Duration(s): <input type="number" id="overallDuration" value="15"></label>
+      <button id="applySettings">Apply</button>
+    </div>
+  </div>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="game.js"></script>
