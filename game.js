@@ -115,7 +115,7 @@ function resetGame() {
 $(".cloud").each(function (index) {  //cloud animation
   const randomTop = Math.random() * 80;
   const randomDuration = Math.random() * 20 + 50;
-  let randomDelay = Math.random() * 10 + 15;
+  let randomDelay = Math.random() * 10 + 20;
   if (index === 0) {
     randomDelay = 0;
   }
